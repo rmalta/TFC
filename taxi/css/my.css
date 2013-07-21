@@ -1,0 +1,23 @@
+#map {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+	overflow: hidden;
+}
+
+#content {
+	
+}
+
+/*#footer {
+	display: block;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	right: 0;
+*/}
+
+.ui-content {
+	height: 100%;
+	padding: 0px;
+}

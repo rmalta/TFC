@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<audio id="audiotag1" src="audio/pedido.wav" preload="auto"></audio>
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 	
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>TAXI - Taxidroid</title>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
+		<link rel="stylesheet" href="css/my.css" type="text/css" />
+	</head>
+	<body onload="getPos(); adjustMap();">
+			
+		    
+		    <div id="header" data-role="header" data-position="fixed">
+		    	<h3>Taxidroid</h3>
+		    	<div id="controlos" data-role="controlgroup" data-type="horizontal" class="ui-btn-right" style="display:none">
+		    		<a id="aceito" href="#" data-role="button" data-icon="check" onclick="aceitar()">Sim</a>
+		    		<a id="nego" href="#" data-role="button" data-icon="delete" onclick="negar()">Não</a>
+		    	</div>		    	
+			<div data-role="controlgroup" data-type="horizontal" class="ui-btn-left">
+				<a id="mudar_ocupado" href="#" data-role="button" data-icon="grid" onclick="mudar_livre()" class="ui-btn-left" style="background:red; display: none">Ocupado</a>
+				<a id="mudar_livre" href="#" data-role="button" data-icon="grid" onclick="mudar_ocupado()" class="ui-btn-left" style="background:green; display: none">Livre</a>
+			</div>
+			<div data-role="controlgroup" data-type="horizontal" class="ui-btn-right">
+				<a id="chegou" href="#" data-role="button" data-icon="grid" onclick="arrived()" style="display:none">Chegou?</a>
+				<a id="concluir" href="#" data-role="button" data-icon="grid" onclick="concluir_servico()" style="display:none">Concluir Serviço</a>
+			</div>
+		    </div>
+		    
+		   	<div id="map"></div>
+
+		    <div id ="controlos"></div>
+
+		    <div id="footer" data-role="footer" data-position="fixed">
+		    	<h3></h3>
+			<a id="logout" href="index.html" data-role="button" data-icon="delete" class="ui-btn-right">Sair</a>
+		    </div> 
+		
+	</body>
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script charset="UTF-8" type="text/javascript" src="js/my.js"></script>
+	<script charset="UTF-8" type="text/javascript" src="js/auth.js"></script>
+
+</html>

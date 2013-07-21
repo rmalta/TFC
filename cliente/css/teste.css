@@ -1,0 +1,29 @@
+#header {
+    background-color: #505050;
+    text-align:center;
+    color: #f6f4f4;   
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0px;
+}
+
+#footer {
+    background-color: #505050;
+    color: #f6f4f4;
+    text-align: center;
+    position:fixed;
+    bottom:0;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    left: 0;
+    margin: 0px;
+}
+
+body {
+    background-color: #FFFFFF
+    
+}
